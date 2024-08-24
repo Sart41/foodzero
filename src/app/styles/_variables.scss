@@ -1,0 +1,30 @@
+:root {
+  --color-green-primary: #233000;
+  --color-green-secondary: #5e6600;
+  --color-green-tertiary: #9caa00;
+  --color-green-4: #ebf0e4;
+
+  --color-dark-primary: #000;
+  --color-dark-secondary: #4d4d4d;
+  --color-dark-tertiary: #b0b0b0;
+  --color-white: #fff;
+
+  --color-text-primary: #1d2130;
+  --color-text-secondary: #525560;
+
+  --base-font-family: 'Lato', sans-serif;
+  --base-font-family-secondary: 'Rufina', sans-serif;
+  --base-font-weight: 400;
+  --base-font-size: 24px;
+  --base-line-height: 1.4;
+
+  --container-width: 1644px;
+  --container-padding-x: 16px;
+
+  --header-height: 75px;
+}
+
+$laptops: 1023.98px;
+$tablets: 767.98px;
+$mobiles: 474.98px;
+$headerHeight: 75;

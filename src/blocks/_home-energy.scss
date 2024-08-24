@@ -1,0 +1,157 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.home-energy {
+  padding-block: calcValue(40, 128, 474);
+  // .home-energy__header
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1101px;
+    margin-bottom: calcValue(40, 126, 474);
+    margin-inline: auto;
+
+    text-align: center;
+  }
+
+  // .home-energy__title
+
+  &__title {
+    font-size: calcValue(32, 48, 320, 474);
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .home-energy__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+  }
+
+  // .home-energy__item
+  &__item {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.energy {
+  position: relative;
+  top: 0;
+
+  overflow: hidden;
+
+  box-shadow: 21px 17px 31px -12px var(--color-green-secondary);
+
+  transition: all 0.5s ease-in;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 22.503516%; /* 160/711 */
+
+    background: linear-gradient(
+      to bottom,
+      rgba(35, 48, 0, 0.5) 0%,
+      rgba(35, 48, 0, 0) 100%
+    );
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include tablets {
+      aspect-ratio: 1;
+    }
+  }
+
+  // .energy__title
+  &__title {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 22.503516%;
+    padding-inline-start: calcValue(8, 40, 320, 474);
+    padding-inline-end: calcValue(8, 40, 320, 474);
+
+    font-family: var(--base-font-family-secondary);
+    font-size: calcValue(36, 48, 320, 474);
+
+    transition: color 0.5s ease-in;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+    span {
+      display: inline-block;
+      margin-block-start: -17px;
+    }
+  }
+
+  // .energy__description
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+  }
+
+  &__description {
+    transform: translateY(30%);
+
+    padding-inline: 36px;
+
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-white);
+    letter-spacing: 0.06em;
+
+    opacity: 0;
+  }
+
+  @include hover {
+    top: 5px;
+    box-shadow: unset;
+    .overlay {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: opacity 0.3s ease-in;
+    }
+
+    .energy__description {
+      transform: translateY(20px);
+      opacity: 1;
+      transition: opacity 0.5s ease-in 0.2s, transform 0.5s ease-in 0.2s;
+    }
+    .energy__title {
+      // color: wheat;
+    }
+  }
+}

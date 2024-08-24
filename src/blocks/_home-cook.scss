@@ -1,0 +1,80 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.home-cook {
+  padding-block-start: calcValue(60, 234, 474);
+  background-color: var(--color-green-4);
+  overflow: hidden;
+  // .home-cook__container
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include tablets {
+      flex-wrap: wrap;
+    }
+  }
+  &__img {
+    margin-bottom: -26px;
+    z-index: 1;
+  }
+  // .home-cook__header
+
+  &__header {
+    max-width: 40.5625rem;
+  }
+
+  // .home-cook__title
+
+  &__title {
+  }
+
+  // .home-cook__description
+
+  &__description {
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: 0;
+    svg {
+      fill: none;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    path {
+      stroke-dasharray: 1700;
+      // stroke-dashoffset: 4871;
+      animation: leafAnimation 6s linear infinite;
+    }
+
+    &--1 {
+      width: 19.689737%; /* 330/1676 */
+      // width: calcValue(140, 330, 360, 1676);
+      height: auto;
+      top: -4.545455%; /* 40/880 */
+      left: 1.372315%; /* 23/1676 */
+      scale: -1 1;
+    }
+    &--2 {
+      width: 27.207637%; /* 456/1676 */
+      // aspect-ratio: 456/464;
+      bottom: 0;
+      right: 0;
+      path {
+        animation-delay: 1s;
+      }
+    }
+  }
+  @keyframes leafAnimation {
+    from {
+      stroke-dashoffset: 1700;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}

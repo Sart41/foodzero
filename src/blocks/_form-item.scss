@@ -1,0 +1,54 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.form-item {
+  --infoHeight: 30px;
+
+  position: relative;
+  display: flex;
+  // font-size: 24px;
+
+  @include tablets {
+    --infoHeight: 20px;
+  }
+}
+
+.form-label {
+}
+.form-input {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: calcValue(60, 96, 474);
+  padding-inline: 40px;
+
+  background-color: transparent;
+  border: 2px solid var(--color-green-primary);
+  box-shadow: 5px 8px 8px -2px var(--color-green-secondary);
+  &:not(:valid) + p {
+    color: red;
+  }
+}
+.form-info {
+  position: absolute;
+  bottom: calc(var(--infoHeight) * -1 / 1);
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 30%;
+  padding-left: 10px;
+
+  // font-family: var(--base-font-family-primary);
+  font-size: calcValue(18, 24, 474);
+  font-style: italic;
+  // font-weight: 700;
+  // &.error {
+  //   color: red;
+  // }
+}

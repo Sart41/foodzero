@@ -1,0 +1,125 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+$standartTrans: ease-in 0.2s;
+
+.header {
+  min-height: toRem(208);
+  padding-block-start: 32px;
+  background-color: var(--color-green-primary);
+
+  &__container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablets {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .header__left
+  &__left {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 2.8125rem;
+    align-items: center;
+    justify-content: start;
+
+    @media (width < 675px) {
+      flex-grow: 1;
+      flex-wrap: nowrap;
+    }
+  }
+
+  // .header__right
+  &__right {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: toRem(26);
+    align-items: center;
+    justify-content: end;
+    a {
+      display: inline-block;
+
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--color-white);
+      text-align: end;
+      text-decoration: none;
+    }
+
+    @media (width < 992px){
+      // align-self: flex-start;
+      a {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    height: toRem(88);
+    padding-inline: calcValue(24, 46, 768);
+
+    font-family: 'Rufina', serif;
+    font-size: calcValue(24, 32, 768);
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--color-white);
+
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+
+    @include tablets {
+      flex-grow: 1;
+      min-height: 54px;
+    }
+  }
+
+  .burger-icon {
+    @include reset-button;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+
+    width: 94px;
+    height: 71px;
+    padding-inline: toRem(24);
+
+    background-color: transparent;
+
+    span,
+    span::after,
+    span::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+
+      width: toRem(46);
+      height: 2px;
+
+      background-color: var(--color-white);
+      border-radius: 20px;
+    }
+
+    span {
+      position: relative;
+
+      &::before {
+        top: toRem(12);
+      }
+
+      &::after {
+        top: toRem(-12);
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.home-feedback {
+  &__slider {
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__item.swiper-slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    position: relative;
+
+    max-width: 1419px;
+    margin-bottom: calcValue(32, 86, 474);
+    padding-right: calcValue(0, 157, 474);
+
+    font-family: var(--base-font-family-secondary);
+    font-size: calcValue(22, 48, 474);
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  &__text span {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0; /* 157/1262 */
+
+    aspect-ratio: 282 / 234;
+    width: 22.345483%; /* 282/1262 */
+
+    background: url('/vectors/quote.svg') center / cover no-repeat;
+  }
+
+  &__client {
+    display: grid;
+    grid-template-columns: auto 1fr 240px;
+    gap: calcValue(24, 60, 400, 992);
+    img {
+      border-radius: 50%;
+    }
+
+    @media (max-width: 991.98px) {
+      grid-template-columns: auto 1fr;
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  &__client-info {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    justify-content: center;
+
+    max-width: 600px;
+  }
+
+  &__client-name {
+    font-family: var(--base-font-family-secondary);
+    font-size: calcValue(20, 32, 474);
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__client-occupation {
+    font-size: calcValue(20, 24, 400, 768);
+    color: var(--color-dark-secondary);
+  }
+
+  &__controls {
+    z-index: 5;
+
+    display: inline-flex;
+    gap: 40px;
+
+    margin-block-start: -130px;
+    margin-inline-start: auto;
+
+    @media (max-width: 991.98px) {
+      margin-block-start: initial;
+      margin-inline: auto;
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    @include reset-button;
+    &:not(.swiper-button-disabled) {
+      color: inherit;
+    }
+  }
+
+  &__pagination {
+    font-family: var(--base-font-family-secondary);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}

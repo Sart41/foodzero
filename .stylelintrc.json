@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-recommended-scss", "stylelint-config-clean-order"],
+  "rules": {
+    "order/order": ["custom-properties", "dollar-variables", "declarations", "rules"],
+    "block-no-empty": null,
+    "no-descending-specificity": null
+  },
+  "fix": true
+}

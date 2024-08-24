@@ -1,0 +1,34 @@
+@use '/src/blocks/main-text-animation';
+
+@use '/src/widgets/header/header';
+
+@use '/src/widgets/footer/footer';
+
+@use '/src/blocks/form-item';
+
+@use '/src/widgets/popupMenu/popupMenu';
+
+@use '/pages/PageMain/sections/hero/main_hero';
+
+@use '/src/blocks/home-hero';
+
+@use '/src/blocks/home-ourMenu';
+
+@use '/src/blocks/home-cook';
+
+@use '/src/blocks/home-testimonials';
+
+@use '/src/blocks/home-posts';
+
+@use '/src/blocks/home-reservation';
+
+@use '/src/blocks/home-energy';
+
+@use '/src/blocks/home-feedbacks';
+
+@use '/src/widgets/feedback-slider/feedback_slider';
+
+@use 'flatpickr/dist/flatpickr.min.css';
+
+@use 'swiper/css/bundle';
+

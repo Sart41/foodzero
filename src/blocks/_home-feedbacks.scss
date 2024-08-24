@@ -1,0 +1,39 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.home-feedback {
+  padding-block-start: calcValue(40, 118, 474);
+  padding-block-end: calcValue(40, 145, 474);
+  // .home-feedback__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1456px;
+  }
+
+
+  // .home-feedback__client
+
+
+  // .home-feedback__pagination
+
+  @media (max-width: 767.98px) {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+
+    &__text {
+      grid-column: span 1;
+    }
+
+    &__text span {
+      top: initial;
+      right: 0;
+      bottom: 0;
+    }
+    &__pagination {
+      justify-self: center;
+    }
+  }
+}

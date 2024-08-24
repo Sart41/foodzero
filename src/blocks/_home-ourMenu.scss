@@ -1,0 +1,90 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.ourMenu {
+  position: relative;
+  padding-block-start: calcValue(40, 176, 474);
+  padding-block-end: calcValue(40, 218, 474);
+  // .ourMenu__container
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55rem;
+    height: 59.125rem;
+    background: var(--ourMenuBgImg) cover / center no-repeat;
+  }
+  &__container {
+  }
+
+  // .ourMenu__header
+
+  &__header {
+    max-width: 33.25rem;
+    margin-bottom: calcValue(40, 158, 474);
+  }
+
+  // .ourMenu__title
+
+  &__title {
+    margin-bottom: 1.125rem;
+  }
+
+  // .ourMenu__description
+
+  &__description {
+    color: var(--color-dark-secondary);
+  }
+
+  // .ourMenu__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calcValue(40, 108, 768) calcValue(25, 60, 778);
+    @media (width < 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .ourMenu__item
+
+  &__item {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 24px 0;
+    align-items: end;
+
+    font-family: var(--base-font-family-secondary);
+    font-weight: 700;
+    @include tablets {
+      box-shadow: 21px 17px 31px -12px black;
+    }
+  }
+
+  // .ourMenu__item-price
+
+  &__item-price {
+    font-size: calcValue(24, 48, 768);
+    line-height: 133%;
+    text-align: right;
+    border-bottom: 4px dashed var(--color-dark-primary);
+  }
+
+  // .ourMenu__item-title
+
+  &__item-title {
+    font-size: calcValue(32, 68, 768);
+    line-height: 124%;
+  }
+
+  // .ourMenu__item-description
+
+  &__item-description {
+    letter-spacing: 0.02em;
+    color: var(--color-dark-secondary);
+    font-size: calcValue(18, 24, 474);
+  }
+}

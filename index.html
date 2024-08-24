@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/app/index.scss" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__left">
+            <div class="header__logo">
+              <a href="/">
+                <img src="/icons/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <button
+              class="burger-icon"
+              aria-label="Open menu"
+              aria-expanded="false"
+              onclick="menuPopup.showModal()"
+            >
+              <span></span>
+            </button>
+          </div>
+          <div class="header__right">
+            <a href="tel:+86852346000">+86 852 346 000</a>
+            <button class="header__btn btn" type="button">Reservations</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="home__hero">
+          <div class="__container">
+            <div class="home__hero-inner">
+              <div class="home__hero-content">
+                <header class="home__hero-header">
+                  <h1 class="h2">
+                    Healthy&nbsp;Eating is&nbsp;important part&nbsp;of&nbsp;ifestyle
+                  </h1>
+                </header>
+                <div class="home__hero-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p>
+                </div>
+                <div class="home__hero-scroll">Scroll ----------------------</div>
+              </div>
+              <div class="home__hero-image">
+                <img
+                  width="792"
+                  height="931"
+                  src="/src/images/pageMain_hero/hero-img.jpg"
+                  alt="fried meat dish"
+                />
+                <div class="home__hero-image-mini">
+                  <img
+                    width="250"
+                    height="240"
+                    src="/src/images/pageMain_hero/spices1.png"
+                    alt=""
+                  />
+                  <img
+                    width="250"
+                    height="240"
+                    src="/src/images/pageMain_hero/spices2.png"
+                    alt=""
+                  />
+                  <img
+                    width="250"
+                    height="240"
+                    src="/src/images/pageMain_hero/spices3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home__hero-plan hero-plan">
+              <div class="hero-plan__left">
+                <img
+                  srcset="/src/images/pageMain_hero/image@2x.jpg 2x"
+                  src="/src/images/pageMain_hero/image.jpg"
+                  alt="dish"
+                />
+                <h2 class="h2">Start to plan your diet today</h2>
+                <div class="hero-plan__left-description">
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p> -->
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    consectetur sunt, incidunt voluptatum esse commodi sit amet, veniam
+                    excepturi et soluta deserunt vero id aperiam illum illo minima
+                    repellat ipsa!
+                  </p>
+                </div>
+              </div>
+              <div class="hero-plan__right">
+                <div class="hero-plan__right-description">
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p> -->
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    consectetur sunt, incidunt voluptatum esse commodi sit amet, veniam
+                    excepturi et soluta deserunt vero id aperiam illum illo minima
+                    repellat ipsa!
+                  </p>
+                </div>
+                <img
+                  srcset="/src/images/pageMain_hero/image@2x-1.jpg 2x"
+                  src="/src/images/pageMain_hero/image-1.jpg"
+                  alt="spice"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home__ourMenu ourMenu">
+          <div class="ourMenu__container">
+            <header class="section-header ourMenu__header">
+              <h2 class="section-title ourMenu__title">Our Menu</h2>
+              <div class="section-description ourMenu__description">
+                <p>
+                  This is a section of your menu. Give your section a brief description
+                </p>
+              </div>
+            </header>
+            <div class="ourMenu__list">
+              <article class="ourMenu__item">
+                <div class="ourMenu__item-price">$20</div>
+                <h3 class="ourMenu__item-title">Deep Sea Snow White Cod Fillet</h3>
+                <div class="ourMenu__item-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt,
+                    provident alias! Tenetur molestiae enim et! Voluptates, veritatis.
+                    Voluptas enim ex quos, cumque nemo nam magnam dolore adipisci suscipit
+                    impedit deleniti.
+                  </p>
+                </div>
+              </article>
+              <article class="ourMenu__item">
+                <div class="ourMenu__item-price">$22</div>
+                <h3 class="ourMenu__item-title">Steak With Rosemary Butter</h3>
+                <div class="ourMenu__item-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </article>
+              <article class="ourMenu__item">
+                <div class="ourMenu__item-price">$18</div>
+                <h3 class="ourMenu__item-title">Cucumber Salad</h3>
+                <div class="ourMenu__item-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </article>
+              <article class="ourMenu__item">
+                <div class="ourMenu__item-price">$90</div>
+                <h3 class="ourMenu__item-title">Natural Wine Pairing</h3>
+                <div class="ourMenu__item-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="home__cook home-cook">
+          <div class="home-cook__container">
+            <header class="section-header home-cook__header">
+              <h2 class="section-title home-cook__title">Excellent cook</h2>
+              <div class="section-description home-cook__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id
+                  penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt
+                  lacus nunc.
+                </p>
+              </div>
+            </header>
+            <div class="home-cook__img">
+              <img
+                width="952"
+                height="933"
+                src="/src/images/pageMain_cook/cook.png"
+                alt="man cook"
+              />
+            </div>
+            <div class="home-cook__decor home-cook__decor--1">
+              <svg
+                width="330"
+                height="287"
+                viewBox="0 0 330 287"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="path"
+                  d="M111.383 100.799C101.597 87.586 88.8643 59.5106 97.0412 41.4642C112.21 7.98667 166.004 -5.20893 183.991 5.22017C179.739 5.583 166.341 10.75 152.367 19.5319C139.664 27.5146 134.416 48.5362 150.796 34.8321C156.53 30.0342 173.075 17.4772 183.982 14.9128C206.071 9.71966 227.369 13.2913 241.523 26.7267C231.623 26.4211 212.635 26.5966 192.2 33.933C166.656 43.1035 157.192 54.9753 157.726 56.2146C158.26 57.454 157.52 56.0092 180.934 46.532C218.261 31.4231 263.809 31.6468 289.284 68.6157C264.158 51.8715 242.092 55.7084 211.752 60.1411C196.866 62.3162 170.231 72.8685 173.313 75.8263C176.396 78.784 180.069 76.7111 191.9 73.6949C203.73 70.6786 228.109 69.1169 243.11 70.3674C276.161 73.1226 309.933 72.772 326.223 128.557C298.549 100.76 259.459 97.6067 225.774 96.303C218.636 96.0268 174.398 98.5158 176.305 109.927C177.451 116.781 197.819 112.009 203.55 111.621C209.282 111.233 235.806 108.901 243.382 108.82C250.959 108.739 267.281 108.196 287.215 117.362C307.15 126.528 316.965 138.708 319.94 143.182C322.914 147.656 328.459 162.288 328.078 173.106C327.773 181.761 327.924 190.929 328.038 194.431C323.701 187.605 311.825 172.19 293.583 160.947C270.781 146.894 252.465 142.111 243.73 140.609C234.995 139.107 221.284 138.793 221.023 143.927C220.761 149.06 234.608 156.146 241.443 159.201C248.279 162.256 264.375 169.064 270.319 172.258C276.262 175.452 292.749 186.947 303.297 196.852C313.845 206.756 316.151 215.42 317.355 229.473C318.318 240.716 309.312 264.886 306.249 269.186C308.345 262.568 305.97 252.488 297.634 242.362M111.383 100.799L102.505 99.8489M111.383 100.799C112.545 94.2977 111.745 71.2483 115.382 59.1986C119.929 44.1365 125.787 36.3439 132.718 28.5814M111.383 100.799C114.655 94.0417 123.867 77.6629 134.535 66.2082C147.87 51.8898 164.021 38.807 173.001 32.4882M111.383 100.799C113.501 101.374 116.321 102.31 119.744 103.643M111.383 100.799C79.1617 106.056 37.8921 150.367 45.5089 183.277M297.634 242.362C267.387 230.473 287.889 253.204 274.467 252.206C263.666 251.404 252.138 248.018 233.049 226.241C221.442 213 206.492 173.043 200.836 182.751C194.36 193.865 202.676 218.297 218.16 239.089C237.222 264.685 264.588 269.262 266.994 270.43C263.23 270.378 236.547 283.668 222.911 281.362C212.703 279.635 194.969 275.368 180.258 251.827C165.547 228.287 163.077 196.695 162.476 188.014C161.996 181.07 164.495 161.714 165.805 152.904C165.579 148.552 163.589 141.711 157.437 149.162C149.748 158.476 152.842 200.249 156.922 219.432C161.578 241.324 177.873 270.657 196.67 285.196C189.602 283.955 168.038 282.875 154.45 276.779C137.465 269.158 126.641 261.631 120.207 242.728C113.774 223.825 112.012 207.801 112.502 193.262C112.993 178.723 117.746 160.388 119.782 154.735C121.411 150.213 127.324 138.656 129.161 133.129C114.858 137.008 108.33 156.733 105.643 169.831C103.559 179.988 100.539 195.935 100.721 204.306C101.057 219.754 102.839 257.337 122.974 264.936C104.884 261.183 82.2303 241.779 74.2769 226.095C65.4095 208.609 67.6958 188.201 69.679 181.101C71.6623 174.001 81.2331 149.182 86.64 140.974C90.9654 134.407 94.4267 127.985 95.6167 125.594C96.8035 123.491 97.8896 119.962 92.7393 122.671C87.5891 125.38 80.6272 134.38 77.7901 138.542C75.5771 142.312 70.7459 150.811 69.1248 154.644C67.0985 159.436 61.0625 176.12 60.1494 182.391C59.2363 188.663 58.214 198.655 59.68 206.473C60.8528 212.727 63.8882 219.477 65.2593 222.07C50.633 218.349 28.8774 198.621 26.7746 172.307C24.7504 146.978 42.2613 130.554 58.1192 115.504C60.1287 113.985 64.0848 108.372 55.434 109.846C34.2909 113.45 18.1769 140.637 14.5319 159.635C10.4124 156.92 2.08114 138.96 1.64585 127.882C1.01537 111.836 8.94044 97.4475 22.6667 89.6684M297.634 242.362C289.627 235.852 264.95 215.63 258.115 209.66C250.806 203.276 231.218 193.369 211.149 163.627M102.505 99.8489C95.467 93.4525 87.9469 88.3659 81.7984 85.1375C75.6498 81.9091 63.2165 79.552 48.2673 80.8507C40.0286 81.5665 30.3044 85.3399 22.6667 89.6684M102.505 99.8489C89.9249 99.4328 29.9198 95.801 18.8952 118.378M102.505 99.8489C86.9869 95.1171 53.3259 85.7006 42.8268 85.8892C32.3277 86.0778 25.0121 88.4873 22.6667 89.6684M129.784 107.954C123.987 112.975 110.93 126.245 105.075 139.153C97.7555 155.287 86.6586 182.969 84.6855 202.678C83.1069 218.445 85.656 228.629 87.1278 231.75M129.784 107.954C126.037 106.212 122.67 104.783 119.744 103.643M129.784 107.954C132.542 109.236 135.505 110.687 138.65 112.316M151.223 119.266C147.591 122.913 139.708 137.209 137.238 165.214C134.15 200.221 136.697 217.614 141.028 234.729C144.492 248.421 149.027 257.856 150.861 260.861M151.223 119.266C146.782 116.66 142.575 114.35 138.65 112.316M151.223 119.266C157.054 122.687 163.289 126.615 169.821 131.091M182.511 140.225C185.909 142.791 189.364 145.497 192.861 148.347C199.618 153.854 205.686 158.938 211.149 163.627M182.511 140.225C180.777 146.799 180.386 165.039 183.16 189.187C186.699 219.99 189.474 224.568 197.85 245.663C203.094 258.871 211.927 265.567 216.265 267.747M182.511 140.225C178.181 136.956 173.942 133.915 169.821 131.091M119.744 103.643C128.925 94.1092 150.8 73.5268 164.859 67.4684C182.433 59.8955 191.911 54.9539 206.149 52.0026M138.65 112.316C141.634 107.642 154.114 96.9822 180.167 91.7313C212.733 85.1678 229.813 84.1756 257.765 86.3354C280.127 88.0633 290.943 94.7339 293.556 97.8532M169.821 131.091C177.494 129.54 200.272 126.198 230.002 125.24C259.731 124.283 291.595 141.436 303.81 150.132M211.149 163.627C226.597 168.639 267.444 190.7 277.572 199.365C287.7 208.031 297.292 219.074 300.822 223.512"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="home-cook__decor home-cook__decor--2">
+              <svg
+                width="330"
+                height="287"
+                viewBox="0 0 330 287"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M111.383 100.799C101.597 87.586 88.8643 59.5106 97.0412 41.4642C112.21 7.98667 166.004 -5.20893 183.991 5.22017C179.739 5.583 166.341 10.75 152.367 19.5319C139.664 27.5146 134.416 48.5362 150.796 34.8321C156.53 30.0342 173.075 17.4772 183.982 14.9128C206.071 9.71966 227.369 13.2913 241.523 26.7267C231.623 26.4211 212.635 26.5966 192.2 33.933C166.656 43.1035 157.192 54.9753 157.726 56.2146C158.26 57.454 157.52 56.0092 180.934 46.532C218.261 31.4231 263.809 31.6468 289.284 68.6157C264.158 51.8715 242.092 55.7084 211.752 60.1411C196.866 62.3162 170.231 72.8685 173.313 75.8263C176.396 78.784 180.069 76.7111 191.9 73.6949C203.73 70.6786 228.109 69.1169 243.11 70.3674C276.161 73.1226 309.933 72.772 326.223 128.557C298.549 100.76 259.459 97.6067 225.774 96.303C218.636 96.0268 174.398 98.5158 176.305 109.927C177.451 116.781 197.819 112.009 203.55 111.621C209.282 111.233 235.806 108.901 243.382 108.82C250.959 108.739 267.281 108.196 287.215 117.362C307.15 126.528 316.965 138.708 319.94 143.182C322.914 147.656 328.459 162.288 328.078 173.106C327.773 181.761 327.924 190.929 328.038 194.431C323.701 187.605 311.825 172.19 293.583 160.947C270.781 146.894 252.465 142.111 243.73 140.609C234.995 139.107 221.284 138.793 221.023 143.927C220.761 149.06 234.608 156.146 241.443 159.201C248.279 162.256 264.375 169.064 270.319 172.258C276.262 175.452 292.749 186.947 303.297 196.852C313.845 206.756 316.151 215.42 317.355 229.473C318.318 240.716 309.312 264.886 306.249 269.186C308.345 262.568 305.97 252.488 297.634 242.362M111.383 100.799L102.505 99.8489M111.383 100.799C112.545 94.2977 111.745 71.2483 115.382 59.1986C119.929 44.1365 125.787 36.3439 132.718 28.5814M111.383 100.799C114.655 94.0417 123.867 77.6629 134.535 66.2082C147.87 51.8898 164.021 38.807 173.001 32.4882M111.383 100.799C113.501 101.374 116.321 102.31 119.744 103.643M111.383 100.799C79.1617 106.056 37.8921 150.367 45.5089 183.277M297.634 242.362C267.387 230.473 287.889 253.204 274.467 252.206C263.666 251.404 252.138 248.018 233.049 226.241C221.442 213 206.492 173.043 200.836 182.751C194.36 193.865 202.676 218.297 218.16 239.089C237.222 264.685 264.588 269.262 266.994 270.43C263.23 270.378 236.547 283.668 222.911 281.362C212.703 279.635 194.969 275.368 180.258 251.827C165.547 228.287 163.077 196.695 162.476 188.014C161.996 181.07 164.495 161.714 165.805 152.904C165.579 148.552 163.589 141.711 157.437 149.162C149.748 158.476 152.842 200.249 156.922 219.432C161.578 241.324 177.873 270.657 196.67 285.196C189.602 283.955 168.038 282.875 154.45 276.779C137.465 269.158 126.641 261.631 120.207 242.728C113.774 223.825 112.012 207.801 112.502 193.262C112.993 178.723 117.746 160.388 119.782 154.735C121.411 150.213 127.324 138.656 129.161 133.129C114.858 137.008 108.33 156.733 105.643 169.831C103.559 179.988 100.539 195.935 100.721 204.306C101.057 219.754 102.839 257.337 122.974 264.936C104.884 261.183 82.2303 241.779 74.2769 226.095C65.4095 208.609 67.6958 188.201 69.679 181.101C71.6623 174.001 81.2331 149.182 86.64 140.974C90.9654 134.407 94.4267 127.985 95.6167 125.594C96.8035 123.491 97.8896 119.962 92.7393 122.671C87.5891 125.38 80.6272 134.38 77.7901 138.542C75.5771 142.312 70.7459 150.811 69.1248 154.644C67.0985 159.436 61.0625 176.12 60.1494 182.391C59.2363 188.663 58.214 198.655 59.68 206.473C60.8528 212.727 63.8882 219.477 65.2593 222.07C50.633 218.349 28.8774 198.621 26.7746 172.307C24.7504 146.978 42.2613 130.554 58.1192 115.504C60.1287 113.985 64.0848 108.372 55.434 109.846C34.2909 113.45 18.1769 140.637 14.5319 159.635C10.4124 156.92 2.08114 138.96 1.64585 127.882C1.01537 111.836 8.94044 97.4475 22.6667 89.6684M297.634 242.362C289.627 235.852 264.95 215.63 258.115 209.66C250.806 203.276 231.218 193.369 211.149 163.627M102.505 99.8489C95.467 93.4525 87.9469 88.3659 81.7984 85.1375C75.6498 81.9091 63.2165 79.552 48.2673 80.8507C40.0286 81.5665 30.3044 85.3399 22.6667 89.6684M102.505 99.8489C89.9249 99.4328 29.9198 95.801 18.8952 118.378M102.505 99.8489C86.9869 95.1171 53.3259 85.7006 42.8268 85.8892C32.3277 86.0778 25.0121 88.4873 22.6667 89.6684M129.784 107.954C123.987 112.975 110.93 126.245 105.075 139.153C97.7555 155.287 86.6586 182.969 84.6855 202.678C83.1069 218.445 85.656 228.629 87.1278 231.75M129.784 107.954C126.037 106.212 122.67 104.783 119.744 103.643M129.784 107.954C132.542 109.236 135.505 110.687 138.65 112.316M151.223 119.266C147.591 122.913 139.708 137.209 137.238 165.214C134.15 200.221 136.697 217.614 141.028 234.729C144.492 248.421 149.027 257.856 150.861 260.861M151.223 119.266C146.782 116.66 142.575 114.35 138.65 112.316M151.223 119.266C157.054 122.687 163.289 126.615 169.821 131.091M182.511 140.225C185.909 142.791 189.364 145.497 192.861 148.347C199.618 153.854 205.686 158.938 211.149 163.627M182.511 140.225C180.777 146.799 180.386 165.039 183.16 189.187C186.699 219.99 189.474 224.568 197.85 245.663C203.094 258.871 211.927 265.567 216.265 267.747M182.511 140.225C178.181 136.956 173.942 133.915 169.821 131.091M119.744 103.643C128.925 94.1092 150.8 73.5268 164.859 67.4684C182.433 59.8955 191.911 54.9539 206.149 52.0026M138.65 112.316C141.634 107.642 154.114 96.9822 180.167 91.7313C212.733 85.1678 229.813 84.1756 257.765 86.3354C280.127 88.0633 290.943 94.7339 293.556 97.8532M169.821 131.091C177.494 129.54 200.272 126.198 230.002 125.24C259.731 124.283 291.595 141.436 303.81 150.132M211.149 163.627C226.597 168.639 267.444 190.7 277.572 199.365C287.7 208.031 297.292 219.074 300.822 223.512"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="home__testimonials home-testimonials">
+          <div class="home-testimonials__container">
+            <div class="home-testimonials__list">
+              <article class="home-testimonials__item">
+                <div class="home-testimonials__item-img">
+                  <img src="/vectors/fish.svg" alt="" />
+                </div>
+                <h3 class="home-testimonials__item-title">Premium Quality</h3>
+                <div class="home-testimonials__item-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p>
+                </div>
+              </article>
+              <article class="home-testimonials__item">
+                <div class="home-testimonials__item-img">
+                  <img src="/vectors/carrot.svg" alt="" />
+                </div>
+                <h3 class="home-testimonials__item-title">Seasonal Vegetables</h3>
+                <div class="home-testimonials__item-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione,
+                    reprehenderit dolorem eius aliquid quibusdam laborum ipsam numquam
+                    facere. Ea commodi maiores quasi natus dolorum tenetur laboriosam hic
+                    ratione animi.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p>
+                </div>
+              </article>
+              <article class="home-testimonials__item">
+                <div class="home-testimonials__item-img">
+                  <img src="/vectors/lime.svg" alt="" />
+                </div>
+                <h3 class="home-testimonials__item-title">Fresh Fruit</h3>
+                <div class="home-testimonials__item-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+                    arcu
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="home__posts home-posts">
+          <div class="home-posts__container">
+            <div class="home-posts__list">
+              <article class="home-posts__item post">
+                <header class="post__header">
+                  <img
+                    width="792"
+                    height="792"
+                    srcset="/src/images/pageMain_posts/post@2x.jpg 2x"
+                    src="/src/images/pageMain_posts/post.jpg"
+                    alt="Descriptive Alt Text"
+                    class="post__image"
+                  />
+                  <div class="post__category">Fashion</div>
+                </header>
+
+                <div class="post__meta">
+                  <img
+                    width="60"
+                    height="60"
+                    src="/src/images/pageMain_posts/avatar.jpg"
+                    class="post__avatar"
+                    alt="Author Name"
+                  />
+                  <div class="post__meta-info">
+                    <span class="post__meta-name">Julie Christie</span>
+                    <span class="post__meta-date">October 17, 2021</span>
+                    <span class="post__meta-time">3:33 pm</span>
+                    <span class="post__meta-comments">2 comments</span>
+                  </div>
+                </div>
+
+                <h3 class="post__title">
+                  Fruit and vegetables and protection against diseases Fruit and
+                  vegetables and protection against diseases
+                </h3>
+
+                <span class="post__divider"></span>
+
+                <div class="post__excerpt">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                    architecto ipsa pariatur mollitia ducimus, sunt et omnis repellat vero
+                    modi voluptatem maxime quidem laborum nostrum reprehenderit nesciunt
+                    quibusdam magni atque.
+                  </p>
+                </div>
+
+                <a href="#!" class="read-more"
+                  >Read More
+                  <svg
+                    width="48"
+                    height="28"
+                    viewBox="0 0 48 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                      fill="#233000"
+                    />
+                  </svg>
+                </a>
+              </article>
+
+              <article class="home-posts__item post">
+                <header class="post__header">
+                  <img
+                    width="792"
+                    height="792"
+                    srcset="/src/images/pageMain_posts/post@2x-1.jpg 2x"
+                    src="/src/images/pageMain_posts/post-1.jpg"
+                    alt="Descriptive Alt Text"
+                    class="post__image"
+                  />
+                  <div class="post__category">Fashion</div>
+                </header>
+
+                <div class="post__meta">
+                  <img
+                    width="60"
+                    height="60"
+                    src="/src/images/pageMain_posts/avatar-1.jpg"
+                    class="post__avatar"
+                    alt="Author Name"
+                  />
+                  <div class="post__meta-info">
+                    <span class="post__meta-name">Dianne Russell</span>
+                    <span class="post__meta-date">October 17, 2021</span>
+                    <span class="post__meta-time">3:33 pm</span>
+                    <span class="post__meta-comments">2 comments</span>
+                  </div>
+                </div>
+
+                <h3 class="post__title">
+                  Asparagus Spring Salad with Rocket, Goat's Cheese
+                </h3>
+
+                <span class="post__divider"></span>
+
+                <div class="post__excerpt">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <a href="#!" class="read-more"
+                  >Read More
+                  <svg
+                    width="48"
+                    height="28"
+                    viewBox="0 0 48 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                      fill="#233000"
+                    />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="home__reservation home-reservation">
+          <div class="home-reservation__container">
+            <header class="home-reservation__header">
+              <h2 class="section-title home-reservation__title">Make a Reservation</h2>
+              <h2 class="section-description home-reservation__description">
+                Get in touch with restaurant
+              </h2>
+            </header>
+            <form class="booking-form" id="bookingForm">
+              <div class="booking-form__container">
+                <div class="form-item booking-form__item">
+                  <label class="form-label booking-form__label sr-only" for="datePicker"
+                    >Желаемая дата</label
+                  >
+                  <input
+                    class="form-input booking-form__input"
+                    name="date"
+                    id="datePicker"
+                    type="date"
+                    required
+                  />
+                  <p class="form-info booking-form__info">pick a date</p>
+                </div>
+                <div class="form-item booking-form__item">
+                  <label class="form-label booking-form__label sr-only" for="timePicker"
+                    >Желаемое время</label
+                  >
+                  <input
+                    class="form-input booking-form__input"
+                    name="time"
+                    id="timePicker"
+                    type="time"
+                    required
+                  />
+                  <p class="form-info booking-form__info">pick a time</p>
+                </div>
+                <div class="form-item booking-form__item">
+                  <label class="form-label booking-form__label" for="guests"></label>
+                  <select
+                    class="form-input booking-form__input"
+                    name="guests"
+                    id="guests"
+                    required
+                  >
+                    <option value="1">1 Person</option>
+                    <option value="2" selected>2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                  </select>
+                  <p class="form-info booking-form__info">party size</p>
+                </div>
+              </div>
+              <button class="booking-form__btn btn" type="submit">Book Now</button>
+            </form>
+          </div>
+        </section>
+        <section class="home__energy home-energy">
+          <div class="home-energy__container">
+            <header class="home-energy__header">
+              <h2 class="section-title home-energy__title">Calories Energy Balance</h2>
+              <div class="section-description home-energy__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </header>
+            <ul class="home-energy__list">
+              <li class="home-energy__item">
+                <a href="#!">
+                  <article class="energy">
+                    <header class="energy__header">
+                      <h3 class="energy__title">
+                        Starters
+                        <span>
+                          <svg
+                            width="48"
+                            height="28"
+                            viewBox="0 0 48 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M34.0517 0.982422L31.3237 3.77048L39.6221 12.063H0.75V15.938H39.6221L31.3257 24.2324L34.0517 27.0185L47.0659 14.0005L34.0517 0.982422Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </h3>
+                    </header>
+                    <img src="/src/images/pageMain_energy/image.jpg" alt="energy" />
+                    <div class="overlay">
+                      <div class="energy__description energy__overlay">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Distinctio, ab magnam. Numquam ipsa rerum natus fugiat, eum
+                          veritatis repellat enim, cupiditate id recusandae non hic iusto,
+                          magnam harum magni ipsam?
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li class="home-energy__item">
+                <a href="#!">
+                  <article class="energy">
+                    <header class="energy__header">
+                      <h3 class="energy__title">
+                        Mains
+                        <span>
+                          <svg
+                            width="48"
+                            height="28"
+                            viewBox="0 0 48 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M34.0517 0.982422L31.3237 3.77048L39.6221 12.063H0.75V15.938H39.6221L31.3257 24.2324L34.0517 27.0185L47.0659 14.0005L34.0517 0.982422Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </h3>
+                    </header>
+                    <img src="/src/images/pageMain_energy/image-2.jpg" alt="energy" />
+                    <div class="overlay">
+                      <div class="energy__description energy__overlay">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Distinctio, ab magnam. Numquam ipsa rerum natus fugiat, eum
+                          veritatis repellat enim, cupiditate id recusandae non hic iusto,
+                          magnam harum magni ipsam?
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li class="home-energy__item">
+                <a href="#!">
+                  <article class="energy">
+                    <header class="energy__header">
+                      <h3 class="energy__title">
+                        Soups
+                        <span>
+                          <svg
+                            width="48"
+                            height="28"
+                            viewBox="0 0 48 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M34.0517 0.982422L31.3237 3.77048L39.6221 12.063H0.75V15.938H39.6221L31.3257 24.2324L34.0517 27.0185L47.0659 14.0005L34.0517 0.982422Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </h3>
+                    </header>
+                    <img src="/src/images/pageMain_energy/image-3.jpg" alt="energy" />
+                    <div class="overlay">
+                      <div class="energy__description energy__overlay">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Distinctio, ab magnam. Numquam ipsa rerum natus fugiat, eum
+                          veritatis repellat enim, cupiditate id recusandae non hic iusto,
+                          magnam harum magni ipsam?
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="home__feedbacks home-feedback">
+          <div class="home-feedback__container">
+            <h2 class="sr-only">Testimonials</h2>
+            <load src="/src/widgets/feedback-slider/feedback_slider.html" />
+          </div>
+        </section>
+      </main>
+      <load src="/src/widgets/footer/footer.htm" />
+    </div>
+
+    <dialog
+      class="popupMenu"
+      id="menuPopup"
+      style="--bgImg: url(/src/images/pageMain_menu/menu-bg.jpg)"
+    >
+      <button
+        class="popupMenu__close-btn"
+        type="button"
+        id="menuPopupCloseBtn"
+        onclick="menuPopup.close()"
+      >
+        <span></span>
+      </button>
+
+      <div class="popupMenu__content">
+        <ul class="popupMenu__menu">
+          <li><a class="popupMenu__menu-link" href="#!">Home</a></li>
+          <li><a class="popupMenu__menu-link" href="#!">Menu</a></li>
+          <li>
+            <a class="popupMenu__menu-link" href="#!">Blogs</a>
+            <ul class="popupMenu__submenu">
+              <li><a class="popupMenu__submenu-link" href="#!">1 Column</a></li>
+              <li><a class="popupMenu__submenu-link" href="#!">2 Coloumns</a></li>
+              <li><a class="popupMenu__submenu-link" href="#!">Sidebar Post</a></li>
+            </ul>
+          </li>
+          <li><a class="popupMenu__menu-link" href="">About</a></li>
+          <li><a class="popupMenu__menu-link" href="">Contact</a></li>
+        </ul>
+
+        <div class="popupMenu__contact">
+          <h2 class="h2">Contact</h2>
+          <div class="popupMenu__contact-item">
+            <a class="popupMenu__contact-link" href="tel:+86852346000">+86 852 346 000</a>
+            <a class="popupMenu__contact-link" href="mailto:info@foodzero.com"
+              >info@foodzero.com</a
+            >
+          </div>
+          <address class="popupMenu__contact-item">
+            <a class="popupMenu__contact-link" href=""
+              >1959 Sepulveda Blvd. <br />
+              Culver City, CA, 90230</a
+            >
+          </address>
+          <ul class="popupMenu__contact-socials">
+            <li>
+              <a class="popupMenu__contact-link" href="#!">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.23327 0C3.71382 0 0 3.70873 0 8.23327V19.7667C0 24.2862 3.70873 28 8.23327 28H19.7667C24.2862 28 28 24.2913 28 19.7667V8.23455C28 3.71382 24.2913 0 19.7667 0H8.23327ZM8.23327 2.54545H19.7667C20.5139 2.54445 21.254 2.69088 21.9445 2.97637C22.6351 3.26185 23.2625 3.68077 23.7909 4.20914C24.3192 4.7375 24.7381 5.36492 25.0236 6.05545C25.3091 6.74598 25.4555 7.48606 25.4545 8.23327V19.7667C25.4555 20.5139 25.3091 21.254 25.0236 21.9445C24.7381 22.6351 24.3192 23.2625 23.7909 23.7909C23.2625 24.3192 22.6351 24.7381 21.9445 25.0236C21.254 25.3091 20.5139 25.4555 19.7667 25.4545H8.23455C7.48722 25.4557 6.74701 25.3094 6.05633 25.024C5.36565 24.7386 4.73808 24.3197 4.20959 23.7913C3.68109 23.2629 3.26205 22.6355 2.97649 21.9448C2.69092 21.2542 2.54445 20.5141 2.54545 19.7667C2.54545 19.7667 2.54663 8.98187 2.54545 8.23455C2.54428 7.48722 2.69059 6.74701 2.976 6.05633C3.26141 5.36565 3.6803 4.73808 4.20868 4.20959C4.73706 3.68109 5.36454 3.26205 6.05515 2.97649C6.74577 2.69092 7.48595 2.54445 8.23327 2.54545ZM21.5167 5.33018C21.3651 5.32951 21.2149 5.35887 21.0747 5.41658C20.9345 5.47429 20.8071 5.5592 20.6999 5.66641C20.5927 5.77362 20.5077 5.901 20.45 6.04121C20.3923 6.18141 20.363 6.33166 20.3636 6.48327C20.3636 7.12473 20.8753 7.63636 21.5167 7.63636C21.6684 7.63721 21.8188 7.60796 21.9592 7.55033C22.0995 7.4927 22.2271 7.40781 22.3344 7.30059C22.4418 7.19336 22.5268 7.06592 22.5846 6.92563C22.6424 6.78535 22.6718 6.63499 22.6711 6.48327C22.6718 6.33155 22.6424 6.1812 22.5846 6.04091C22.5268 5.90062 22.4418 5.77318 22.3344 5.66596C22.2271 5.55873 22.0995 5.47385 21.9592 5.41621C21.8188 5.35858 21.6684 5.32934 21.5167 5.33018ZM14 6.36364C9.8 6.36364 6.36364 9.8 6.36364 14C6.36364 18.2 9.8 21.6364 14 21.6364C18.2 21.6364 21.6364 18.2 21.6364 14C21.6364 9.8 18.2 6.36364 14 6.36364ZM14 8.90909C16.8293 8.90909 19.0909 11.1707 19.0909 14C19.0909 16.8293 16.8293 19.0909 14 19.0909C11.1707 19.0909 8.90909 16.8293 8.90909 14C8.90909 11.1707 11.1707 8.90909 14 8.90909Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="popupMenu__contact-link" href="#!">
+                <svg
+                  width="28"
+                  height="22"
+                  viewBox="0 0 28 22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 2.60975C26.9516 3.05836 25.8394 3.3522 24.7007 3.48144C25.8995 2.78756 26.7967 1.69633 27.2253 0.410799C26.0978 1.05666 24.865 1.51271 23.5795 1.75949C22.792 0.94571 21.7693 0.379785 20.6446 0.135299C19.5198 -0.109186 18.345 -0.0209199 17.2728 0.38862C16.2007 0.798161 15.2808 1.51003 14.6328 2.43166C13.9848 3.35329 13.6387 4.44204 13.6395 5.55635C13.6395 5.99275 13.6897 6.41563 13.7912 6.82046C11.5063 6.71176 9.2707 6.13891 7.23017 5.13924C5.18963 4.13958 3.38993 2.73553 1.94833 1.01861C1.43614 1.86606 1.16749 2.83039 1.17017 3.81184C1.17017 5.73677 2.18167 7.4373 3.72633 8.43303C2.81395 8.40504 1.9218 8.16607 1.12467 7.73613V7.80717C1.12388 9.08953 1.5825 10.3326 2.4226 11.3251C3.26269 12.3176 4.43242 12.9983 5.733 13.2516C4.88724 13.4757 3.99948 13.5089 3.13833 13.3485C3.50514 14.4517 4.2193 15.4166 5.18103 16.1085C6.14277 16.8003 7.30405 17.1845 8.50267 17.2074C7.31108 18.1114 5.94675 18.7794 4.48776 19.1732C3.02876 19.567 1.50375 19.6788 0 19.5022C2.62561 21.1354 5.68253 22.0026 8.80483 22C19.3725 22 25.1522 13.538 25.1522 6.19912C25.1522 5.96231 25.1428 5.71873 25.1335 5.48079C26.2565 4.69487 27.2269 3.72329 28 2.61088V2.60975Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="popupMenu__contact-link" href="#!">
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.36364 0C1.07073 0 0 1.07073 0 2.36364V23.6364C0 24.9293 1.07073 26 2.36364 26H23.6364C24.9293 26 26 24.9293 26 23.6364V2.36364C26 1.07073 24.9293 0 23.6364 0H2.36364ZM2.36364 2.36364H23.6364V23.6364H17.5051V15.6591H20.5707L21.0139 12.1136H17.5063V9.82327C17.5063 8.79036 17.7592 8.08836 19.2412 8.08836H21.1616V4.875C20.8343 4.83364 19.6985 4.76391 18.3926 4.76391C15.6685 4.76391 13.8131 6.40309 13.8131 9.45455V12.1136H10.7108V15.6591H13.8119V23.6364H2.36364V2.36364Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="popupMenu__contact-link" href="#!">
+                <svg
+                  width="28"
+                  height="22"
+                  viewBox="0 0 28 22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 0C9.94431 0 6.36031 0.429 4.17308 0.7568C2.36385 1.0274 0.904615 2.4189 0.571846 4.2625C0.290769 5.8311 0 8.1257 0 11C0 13.8743 0.290769 16.17 0.571846 17.7375C0.904615 19.5811 2.36385 20.977 4.17308 21.2443C6.37 21.5699 9.96585 22 14 22C18.0342 22 21.6311 21.571 23.8269 21.2432C25.6362 20.977 27.0954 19.5811 27.4282 17.7375C27.7092 16.1645 28 13.8655 28 11C28 8.1345 27.7135 5.8355 27.4282 4.2625C27.0954 2.4189 25.6362 1.0274 23.8269 0.7557C21.6397 0.4301 18.0546 0 14 0ZM14 2.2C17.9125 2.2 21.4082 2.6081 23.5243 2.9216C23.9641 2.98581 24.3729 3.18968 24.693 3.50436C25.0131 3.81904 25.2281 4.22858 25.3077 4.675C25.5683 6.127 25.8462 8.2797 25.8462 11C25.8462 13.7159 25.5683 15.873 25.3077 17.325C25.2295 17.772 25.0149 18.1824 24.6946 18.4973C24.3743 18.8122 23.9646 19.0156 23.5243 19.0784C21.3985 19.3919 17.8866 19.8 14 19.8C10.1123 19.8 6.59615 19.3919 4.47569 19.0784C4.03567 19.0148 3.62648 18.8112 3.30631 18.4964C2.98613 18.1816 2.77128 17.7717 2.69231 17.325C2.43169 15.873 2.15385 13.7247 2.15385 11C2.15385 8.272 2.43169 6.127 2.69231 4.675C2.77128 4.2283 2.98613 3.81841 3.30631 3.50362C3.62648 3.18883 4.03567 2.98517 4.47569 2.9216C6.58754 2.6081 10.0875 2.2 14 2.2ZM10.7692 4.7091V17.292L12.3846 16.3636L19.9231 11.9636L21.5385 11L19.9231 10.0375L12.3846 5.6375L10.7692 4.7091ZM12.9231 8.4909L17.1974 11L12.9231 13.5091V8.4909Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="popup" id="popup">
+      <div class="popup__body">
+        <button class="popupCloseBtn" type="button" onClick="popup.close()"></button>
+        <!-- <div class="popup__content">HALLO WORLD</div> -->
+        <div class="confirmation-popup">
+          <h2>Booking Confirmation</h2>
+          <p>
+            You are about to book a table on <strong>[date]</strong> at
+            <strong>[time]</strong> for <strong>[number of guests]</strong>.
+          </p>
+          <p>Please confirm your details.</p>
+
+          <h3>Booking Details:</h3>
+          <ul>
+            <li><strong>Date:</strong> [date]</li>
+            <li><strong>Time:</strong> [time]</li>
+            <li><strong>Number of Guests:</strong> [number of guests]</li>
+          </ul>
+
+          <p>By clicking "Confirm", you agree to our booking terms and conditions.</p>
+
+          <div class="confirmation-buttons">
+            <button type="button" id="confirmButton">Confirm</button>
+            <button type="button" id="cancelButton">Cancel</button>
+          </div>
+
+          <p>
+            If the details are incorrect, click "Cancel" and make the necessary changes.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- <div class="scroll-wrapper"> -->
+      <div class="animation-text__overlay">
+        <h2 class="h2 animation-text" id="animationText">
+          Healthy&nbsp;Eating is&nbsp;important part&nbsp;of&nbsp;ifestyle
+        </h2>
+      </div>
+    <!-- </div> -->
+
+    <script src="/src/lib/flip.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

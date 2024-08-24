@@ -1,0 +1,84 @@
+@use 'functions' as *;
+@use 'variables' as *;
+
+h1:not([class]),
+.h1,
+h2:not([class]),
+.h2,
+h3:not([class]),
+.h3,
+h4:not([class]),
+.h4,
+h5:not([class]),
+.h5,
+h6:not([class]),
+.h6 {
+  --marginBottom: 40px;
+  --tabletFontSize: 32px;
+  --mobileFontSize: 24px;
+
+  display: block;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-heading);
+
+  &:not([class]):not(:first-child) {
+    margin-top: 40px;
+  }
+
+  &:where(:not(:last-child)) {
+    margin-bottom: var(--marginBottom);
+  }
+
+  &:where(:not(:first-child)) {
+    margin-top: 40px;
+  }
+}
+
+h1:not([class]),
+.h1 {
+  font-size: calcValue(30, 56, 474);
+}
+
+h2:not([class]),
+.h2 {
+  --marginBottom: 32px;
+
+  position: relative;
+  font-size: calcValue(40, 48, 474);
+  line-height: 1;
+}
+
+h3:not([class]),
+.h3 {
+  --marginBottom: 32px;
+
+  font-size: calcValue(24, 28, 474);
+}
+
+h4:not([class]),
+.h4 {
+  --marginBottom: 24px;
+  --tabletFontSize: 20px;
+  --mobileFontSize: 18px;
+
+  font-size: 20px;
+}
+
+h5:not([class]),
+.h5 {
+  --marginBottom: 24px;
+  --tabletFontSize: 20px;
+  --mobileFontSize: 20px;
+
+  font-size: 14px;
+}
+
+h6:not([class]),
+.h6 {
+  --marginBottom: 24px;
+  --tabletFontSize: 16px;
+  --mobileFontSize: 15px;
+
+  font-size: 12px;
+}

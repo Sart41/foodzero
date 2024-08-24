@@ -1,0 +1,48 @@
+@use 'sass:math';
+
+$minViewport: 320;
+$maxViewport: 1230;
+
+//to%
+@function prc($pxOne, $pxTwo) {
+  @return calc(($pxOne / $pxTwo) * 100%);
+}
+
+//px -> rem
+@function toRem($px) {
+  @return math.div($px, 16) + rem;
+}
+
+//округление числа $number после запятой до $decimals знаков
+@function toRound($value, $digits: 0) {
+  $multiplier: math.pow(10, $digits);
+
+  @return math.div(math.round($value * $multiplier), $multiplier);
+}
+
+// (I) функция для вычисления адаптиного значение на основе clamp()
+// пример: calcValue( 24, 40, 400, 1200 )
+// первый параметр: минимальное значение
+// второй параметр: максимальное значение
+//  третий параметр(опционально): ширина экрана при котором будет достигнуто минимальное значение из первого параметра
+// четвертый параметр(опционально если был указан третий параметр): максимальное значение
+
+@function calcValue($minValue, $maxValue, $minVP: null, $maxVP: null) {
+  //формула позаимствована на https://utopia.fyi/
+  // calcValue(26, 40, 400,  600)
+
+  $minValueRem: toRem($minValue);
+  $maxValueRem: toRem($maxValue);
+
+  $minViewportPx: if($minVP, $minVP, $minViewport);
+  $maxViewportPx: if($maxVP, $maxVP, $maxViewport);
+
+  $variablePart: math.div(($maxValue - $minValue), ($maxViewportPx - $minViewportPx));
+
+  $constant: toRound(math.div($maxValue - $maxViewportPx * $variablePart, 16), 3);
+
+  $tempVariablePart: toRound($variablePart * 100, 2) + 'vw';
+  $tempConstant: if($constant, '#{$constant}rem +', '');
+
+  @return clamp(#{$minValueRem}, #{$tempConstant} #{$tempVariablePart}, #{$maxValueRem});
+}

@@ -1,0 +1,225 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.home-posts {
+  // .home-posts__list
+  padding-block-end: calcValue(40, 108, 768);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: calcValue(35, 60, 1024);
+  }
+}
+
+.post {
+  position: relative;
+
+  display: grid;
+  grid-row: span 6;
+  grid-template-columns: minmax(16px, 1fr) minmax(320px, 648px) minmax(16px, 1fr);
+  grid-template-rows: subgrid;
+  gap: 0;
+
+  max-width: 792px;
+
+  & > * {
+    grid-column: 2 / 3;
+  }
+
+  // .post__header
+  &__header {
+    position: relative;
+    grid-column: span 3;
+    margin-bottom: calcValue(24, 68, 992);
+  }
+
+  // .post__category
+  &__category {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    display: flex;
+    align-items: center;
+
+    min-height: calcValue(32, 62, 768);
+    padding-inline: calcValue(20, 53, 768);
+
+    font-family: var(--base-font-family-secondary);
+    font-size: 26px;
+    line-height: 185%;
+    color: var(--color-white);
+
+    background: var(--color-green-secondary);
+    box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &__content {
+    display: contents;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 48px;
+
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+
+  // .post__avatar
+  &__avatar {
+    aspect-ratio: 1;
+    width: 60px;
+    border-radius: 50%;
+    // box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  // .post__meta-info
+
+  &__meta-info {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    color: var(--color-green-secondary);
+
+    span:not(:last-child) {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      &::after {
+        content: '';
+
+        width: 4px;
+        height: 4px;
+        margin-inline: calcValue(6, 14, 992);
+
+        background-color: var(--color-green-secondary);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  // .post__title
+  &__title {
+    font-family: var(--base-font-family-secondary);
+    font-size: calcValue(36, 48, 1025);
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  &__divider {
+    display: block;
+    margin-block: 18px;
+    border-bottom: 4px dashed var(--color-dark-primary);
+  }
+
+  // .post__excerpt
+  &__excerpt {
+    margin-bottom: 46px;
+  }
+}
+.read-more {
+  display: inline-flex;
+  gap: 11px;
+  align-items: center;
+
+  line-height: 140%;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+@media (width < 992px) {
+  .post {
+    padding-block-end: 16px;
+    box-shadow: 21px 17px 31px -12px var(--color-green-secondary);
+  }
+  .post__category {
+    min-height: 40px;
+    padding-inline: 20px;
+    font-size: 20px;
+  }
+  .post__title {
+    font-size: calcValue(28, 36, 474);
+    line-height: normal;
+    text-wrap: balance;
+  }
+  .post__meta {
+    margin-bottom: calcValue(20, 30, 474);
+  }
+  .post__excerpt {
+    margin-bottom: calcValue(24, 36, 474);
+    font-size: 18px;
+  }
+  .read-more {
+    font-size: 18px;
+    svg {
+      scale: 0.5;
+    }
+  }
+}
+
+@media (width < 768px) {
+  .home-posts__list {
+    grid-template-columns: 1fr;
+  }
+  .post {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width < 0) {
+  .home-posts__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .post {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+    max-width: none;
+    padding-block: 16px;
+
+    box-shadow: 10px 10px 10px 10px black;
+  }
+  .post__header {
+    flex: 0 0 45%;
+  }
+  .post__category {
+    min-height: 32px;
+    padding-inline: 16px;
+    font-size: 16px;
+  }
+  .post__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .post__meta {
+    margin-bottom: 16px;
+  }
+  .post__meta-info {
+    font-size: 14px;
+  }
+  .post__title {
+    font-size: 24px;
+  }
+  .post__excerpt {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .read-more {
+    font-size: 18px;
+    & > svg {
+      scale: 0.5;
+    }
+  }
+}

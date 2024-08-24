@@ -1,0 +1,46 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.scroll-wrapper {
+}
+
+.animation-text__overlay {
+  position: fixed; /* Фиксированное положение, чтобы контейнер оставался на месте */
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color-green-primary);
+}
+
+.animation-text {
+  // transition: 1s scale ease-in 3s;
+  scale: 1000;
+
+  max-width: min-content;
+
+  font-family: var(--base-font-family-secondary);
+  // font-size: calcValue(66, 188, 768, 1676);
+  font-size: 11.75rem;
+  font-weight: 700;
+  line-height: 103%;
+  color: white;
+
+  opacity: 0.57;
+
+  // animation: text-scale 3s linear 1 5s infinite forwards;
+  animation: text-scale 2s ease-out 0s 1 forwards;
+}
+
+@keyframes text-scale {
+  to {
+    scale: 1;
+  }
+}

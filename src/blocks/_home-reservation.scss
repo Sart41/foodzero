@@ -1,0 +1,56 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.home-reservation {
+  padding-block: calcValue(40, 240, 474);
+  background-color: var(--color-green-4);
+  // .home-reservation__container
+
+  &__container {
+  }
+
+  // .home-reservation__header
+
+  &__header {
+    margin-bottom: 80px;
+    margin-bottom: calcValue(40, 133, 474);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  // .home-reservation__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .home-reservation__description
+
+  &__description {
+    font-weight: 400;
+  }
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: calcValue(40, 133, 474);
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 0;
+
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+
+    background-color: var(--color-green-primary);
+  }
+}
